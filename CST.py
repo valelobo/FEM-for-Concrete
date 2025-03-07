@@ -201,7 +201,7 @@ plt.show()
 
 # X-direction Normal Stress Plot
 plt.figure(figsize=(8, 4))
-plt.title("Longitudinal Normal Stress $\sigma_{xx}$")
+plt.title(r"Longitudinal Normal Stress $\sigma_{xx}$")
 tcf = plt.tricontourf(triangulation, nodal_sigma_xx, levels=20, cmap='jet')
 plt.colorbar(tcf, label='Stress (Pa)')
 plt.gca().set_aspect('equal')
@@ -211,7 +211,7 @@ plt.show()
 
 # Y-direction Normal Stress Plot
 plt.figure(figsize=(8, 4))
-plt.title("Transverse Normal Stress $\sigma_{yy}$")
+plt.title(r"Transverse Normal Stress $\sigma_{yy}$")
 tcf = plt.tricontourf(triangulation, nodal_sigma_yy, levels=20, cmap='jet')
 plt.colorbar(tcf, label='Stress (Pa)')
 plt.gca().set_aspect('equal')
